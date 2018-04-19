@@ -121,3 +121,67 @@ Java Model Exception: Java Model Status [Cannot nest 'JPACRUDApp/src/main/java' 
 
 !ENTRY org.eclipse.wst.server.discovery 1 0 2018-04-19 16:55:29.917
 !MESSAGE already installed: org.eclipse.jst.server.generic.jonas4
+
+!ENTRY org.springframework.ide.eclipse.metadata 2 1 2018-04-19 17:10:24.331
+!MESSAGE org.xml.sax.SAXParseException; systemId: file:/Users/Grace/SD/Java/JPACRUDProject/TuneLibrary/WebContent/WEB-INF/web.xml; lineNumber: 1; columnNumber: 1; Premature end of file.
+!STACK 0
+java.lang.RuntimeException: org.xml.sax.SAXParseException; systemId: file:/Users/Grace/SD/Java/JPACRUDProject/TuneLibrary/WebContent/WEB-INF/web.xml; lineNumber: 1; columnNumber: 1; Premature end of file.
+	at org.springframework.ide.eclipse.core.SpringCoreUtils.parseDocument(SpringCoreUtils.java:659)
+	at org.springframework.ide.eclipse.core.SpringCoreUtils.parseDocument(SpringCoreUtils.java:639)
+	at org.springframework.ide.eclipse.metadata.locate.DynamicWebProjectBeansConfigLocator.canLocateInProject(DynamicWebProjectBeansConfigLocator.java:209)
+	at org.springframework.ide.eclipse.beans.core.model.locate.AbstractPathMatchingBeansConfigLocator.locateBeansConfigs(AbstractPathMatchingBeansConfigLocator.java:69)
+	at org.springframework.ide.eclipse.beans.core.internal.model.BeansProject$2.run(BeansProject.java:1174)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.springframework.ide.eclipse.beans.core.internal.model.BeansProject.populateAutoDetectedConfigsAndConfigSetsInternally(BeansProject.java:1165)
+	at org.springframework.ide.eclipse.beans.core.internal.model.BeansProject$1.run(BeansProject.java:1115)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+Caused by: org.xml.sax.SAXParseException; systemId: file:/Users/Grace/SD/Java/JPACRUDProject/TuneLibrary/WebContent/WEB-INF/web.xml; lineNumber: 1; columnNumber: 1; Premature end of file.
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:257)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:177)
+	at org.springframework.ide.eclipse.core.SpringCoreUtils.parseDocument(SpringCoreUtils.java:656)
+	... 8 more
+
+!ENTRY org.springframework.ide.eclipse.metadata 2 1 2018-04-19 17:10:24.333
+!MESSAGE org.xml.sax.SAXParseException; systemId: file:/Users/Grace/SD/Java/JPACRUDProject/TuneLibrary/WebContent/WEB-INF/web.xml; lineNumber: 1; columnNumber: 1; Premature end of file.
+!STACK 0
+java.lang.RuntimeException: org.xml.sax.SAXParseException; systemId: file:/Users/Grace/SD/Java/JPACRUDProject/TuneLibrary/WebContent/WEB-INF/web.xml; lineNumber: 1; columnNumber: 1; Premature end of file.
+	at org.springframework.ide.eclipse.core.SpringCoreUtils.parseDocument(SpringCoreUtils.java:659)
+	at org.springframework.ide.eclipse.core.SpringCoreUtils.parseDocument(SpringCoreUtils.java:639)
+	at org.springframework.ide.eclipse.metadata.locate.DynamicWebProjectBeansConfigLocator.canLocateInProject(DynamicWebProjectBeansConfigLocator.java:245)
+	at org.springframework.ide.eclipse.beans.core.model.locate.AbstractPathMatchingBeansConfigLocator.locateBeansConfigs(AbstractPathMatchingBeansConfigLocator.java:69)
+	at org.springframework.ide.eclipse.beans.core.internal.model.BeansProject$2.run(BeansProject.java:1174)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.springframework.ide.eclipse.beans.core.internal.model.BeansProject.populateAutoDetectedConfigsAndConfigSetsInternally(BeansProject.java:1165)
+	at org.springframework.ide.eclipse.beans.core.internal.model.BeansProject$1.run(BeansProject.java:1115)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+Caused by: org.xml.sax.SAXParseException; systemId: file:/Users/Grace/SD/Java/JPACRUDProject/TuneLibrary/WebContent/WEB-INF/web.xml; lineNumber: 1; columnNumber: 1; Premature end of file.
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:257)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:177)
+	at org.springframework.ide.eclipse.core.SpringCoreUtils.parseDocument(SpringCoreUtils.java:656)
+	... 8 more
+
+!ENTRY org.eclipse.jface.text 2 0 2018-04-19 17:22:34.536
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-04-19 17:22:34.538
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-04-19 17:22:35.680
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-04-19 17:22:35.681
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-04-19 17:26:52.273
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-04-19 17:26:52.273
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-04-19 17:28:30.988
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-04-19 17:28:30.989
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
