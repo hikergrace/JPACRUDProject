@@ -8,16 +8,16 @@
     <provider>org.hibernate.jpa.HibernatePersistenceProvider
     </provider>
 	
-	<!--  <class>com.skilldistillery.jpacrud.entities.NOSUCHCLASSYET</class>-->
+	<class>com.skilldistillery.jpacrud.entities.Tune</class>
 	
 	
     <properties>
       <property name="javax.persistence.jdbc.url"
-        value="jdbc:mysql://localhost:3306/CHANGEME!!!!!" />
+        value="jdbc:mysql://localhost:3306/tunelibrary" />
       <property name="javax.persistence.jdbc.user"
-        value="CHANGEME"/>
+        value="tunelibrary"/>
       <property name="javax.persistence.jdbc.password"
-        value="CHANGEME" />
+        value="tunelibrary" />
       <property name="javax.persistence.jdbc.driver"
         value="com.mysql.jdbc.Driver" />
 
