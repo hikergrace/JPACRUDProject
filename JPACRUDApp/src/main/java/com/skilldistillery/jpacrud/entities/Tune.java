@@ -18,7 +18,7 @@ public class Tune {
 	@Column(name = "rhythm")
 	private String rhythm;
 
-	@Column(name = "key")
+	@Column(name = "clef")
 	private String key;
 
 	@Column(name = "provenance")
