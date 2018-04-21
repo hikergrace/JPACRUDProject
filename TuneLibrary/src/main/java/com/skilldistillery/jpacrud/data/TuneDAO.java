@@ -8,7 +8,7 @@ public interface TuneDAO {
 	Tune create(Tune music);
 	Tune retreiveById(int id);
 	List<Tune> retreiveAll();
-	Tune update(Tune music);
+	Tune update(Tune updatedMusic);
 	boolean delete(Integer id);
 	public List<Tune> index();
 }

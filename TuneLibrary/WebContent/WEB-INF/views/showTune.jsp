@@ -22,5 +22,19 @@
 		<input type="hidden" value="${tune.id}" name="id">
 		<input type="submit" value="Delete">
 		</form>
+		
+		<p>Update this tune:</p>
+	<form action="updateTune.do" method="POST">
+	Current Tune name: ${tune.name}, new name: <input type="text" name="name"><br/>
+	Current Rhythm (jig, reel, etc): ${tune.rhythm}, new: <input type="text" name="rhythm"><br/>
+	Current Key: ${tune.key}, new: <input type="text" name="key"><br/>
+	Where from: ${tune.provenance}. new: <input type="text" name="provenance"><br/>
+	Sound file (session speed): ${tune.soundFast} <input type="text" name="soundFast"><br/>
+	Sound file (learning speed): ${tune.soundSlow} <input type="text" name="soundSlow"><br/>
+	Other names: ${tune.otherNames}: <input type="text" name="otherNames"><br/>
+	Notes: ${tune.notes}: <input type="text" name="notes"><br/>
+	<input type="submit" value="Submit">
+
+</form>
 </body>
 </html>

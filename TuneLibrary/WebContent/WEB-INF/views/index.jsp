@@ -13,12 +13,12 @@
 <p>Howdy! Welcome to the Tune Library</p>
 
 		<a href="addATune.do">Add a tune</a>
-		<p>Click on a title to see more information on the film.</p>
+		
+		
+		<p>Click on a tune title to see more information on the tune.</p>
 		<c:forEach items="${tuneList}" var="tune">
 			<p><a href="getTune.do?id=${tune.id}"  target="_new">${tune.name}</a></p> 
 		
-	
-			
 		</c:forEach>
 	
 

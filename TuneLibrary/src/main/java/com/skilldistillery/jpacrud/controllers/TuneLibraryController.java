@@ -53,14 +53,22 @@ public class TuneLibraryController {
 		mv.setViewName("/WEB-INF/views/showTune.jsp");
 		return mv;
 	}
-//	@RequestMapping(path = "updateTune.do", method = RequestMethod.POST)
-//	public ModelAndView updateTune(@RequestParam(name="id") Integer tuneId) {
+	
+//	@RequestMapping(path="updateATune.do", method=RequestMethod.GET)
+//	public ModelAndView updateATuneForm() {
 //		ModelAndView mv = new ModelAndView();
-//		dao.update(tuneId);
-//		mv.addObject("tune", tune);
-//		mv.setViewName("/WEB-INF/views/showTune.jsp");
+//		mv.setViewName("WEB-INF/views/updateTune.jsp");
 //		return mv;
 //	}
+	
+	@RequestMapping(path = "updateTune.do", method = RequestMethod.POST)
+	public ModelAndView updateTune(Tune tune) {
+		ModelAndView mv = new ModelAndView();
+		dao.update(tune);
+		mv.addObject("tune", tune);
+		mv.setViewName("/WEB-INF/views/showTune.jsp");
+		return mv;
+	}
 	
 	@RequestMapping(path = "delete.do", method = RequestMethod.POST)
 	public ModelAndView delete(@RequestParam(name="id") Integer tuneId) {

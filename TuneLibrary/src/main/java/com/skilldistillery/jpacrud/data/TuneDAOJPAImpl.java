@@ -31,14 +31,19 @@ public class TuneDAOJPAImpl implements TuneDAO{
 
 
 	@Override
-	public Tune update(Tune music) {
-//		Tune managedTune = em.find(Tune.class, id);
-//		managedTune.setName(music.getName());
-//		managedTune.setKey();
-//		managedTune.getRhythm();
-//		em.persist(music);
-//	    em.flush();
-		return music;
+	public Tune update(Tune updatedMusic) {
+		Tune managedTune = em.find(Tune.class, updatedMusic.getId());
+		managedTune.setName(updatedMusic.getName());
+		managedTune.setRhythm(updatedMusic.getRhythm());
+		managedTune.setKey(updatedMusic.getKey());
+		managedTune.setProvenance(updatedMusic.getProvenance());
+		managedTune.setSoundFast(updatedMusic.getSoundFast());
+		managedTune.setSoundSlow(updatedMusic.getSoundSlow());
+		managedTune.setOtherNames(updatedMusic.getOtherNames());
+		managedTune.setNotes(updatedMusic.getNotes());
+		em.persist(updatedMusic);
+	    em.flush();
+		return managedTune;
 	}
 
 	@Override
@@ -58,7 +63,6 @@ public class TuneDAOJPAImpl implements TuneDAO{
 
 	@Override
 	public List<Tune> retreiveAll() {
-		// TODO Auto-generated method stub
 		return null;
 	}
 	

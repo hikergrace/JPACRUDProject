@@ -9,7 +9,7 @@
 <body>
 
 <p>Update a tune:</p>
-<form action="update.do" method="POST">
+<form action="updateTune.do" method="POST">
 	Tune name: <input type="text" name="name">
 	Rhythm (jig, reel, etc): <input type="text" name="rhythm">
 	Key: <input type="text" name="key">
