@@ -10,14 +10,14 @@
 
 <p>Add a tune</p>
 <form action="addTune.do" method="POST">
-	Tune name: <input type="text" name="name">
-	Rhythm (jig, reel, etc): <input type="text" name="rhythm">
-	Key: <input type="text" name="key">
-	Where from: <input type="text" name="provenance">
-	Sound file (session speed): <input type="text" name="soundFast">
-	Sound file (learning speed): <input type="text" name="soundSlow">
-	Other names: <input type="text" name="otherNames">
-	Notes: <input type="text" name="notes">
+	Tune name: <input type="text" name="name"><br/>
+	Rhythm (jig, reel, etc): <input type="text" name="rhythm"><br/>
+	Key: <input type="text" name="key"><br/>
+	Where from: <input type="text" name="provenance"><br/>
+	Sound file (session speed): <input type="text" name="soundFast"><br/>
+	Sound file (learning speed): <input type="text" name="soundSlow"><br/>
+	Other names: <input type="text" name="otherNames"><br/>
+	Notes: <input type="text" name="notes"><br/>
 	<input type="submit" value="Submit">
 </form>
 

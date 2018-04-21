@@ -62,13 +62,21 @@ public class TuneLibraryController {
 //	}
 	
 	@RequestMapping(path = "updateTune.do", method = RequestMethod.POST)
-	public ModelAndView updateTune(Tune tune) {
+	public ModelAndView updateTune(@RequestParam(name = "id") int id, Tune updatedMusic) {
 		ModelAndView mv = new ModelAndView();
-		dao.update(tune);
-		mv.addObject("tune", tune);
+		 Tune updatedTune = dao.update(id, updatedMusic);
+	        mv.addObject("tune", updatedTune);
 		mv.setViewName("/WEB-INF/views/showTune.jsp");
 		return mv;
 	}
+	
+//	@RequestMapping(path = "getName.do", method = RequestMethod.GET)
+//	public ModelAndView getName(Tune updatedMusic) {
+//		ModelAndView mv = new ModelAndView();
+//		Tune updatedTune = dao.update(updatedMusic);
+//		mv.addObject("tune", updatedTune);
+//		return mv;
+//	}
 	
 	@RequestMapping(path = "delete.do", method = RequestMethod.POST)
 	public ModelAndView delete(@RequestParam(name="id") Integer tuneId) {

@@ -31,8 +31,8 @@ public class TuneDAOJPAImpl implements TuneDAO{
 
 
 	@Override
-	public Tune update(Tune updatedMusic) {
-		Tune managedTune = em.find(Tune.class, updatedMusic.getId());
+	public Tune update(int id, Tune updatedMusic) {
+		Tune managedTune = em.find(Tune.class, id);
 		managedTune.setName(updatedMusic.getName());
 		managedTune.setRhythm(updatedMusic.getRhythm());
 		managedTune.setKey(updatedMusic.getKey());
@@ -41,7 +41,7 @@ public class TuneDAOJPAImpl implements TuneDAO{
 		managedTune.setSoundSlow(updatedMusic.getSoundSlow());
 		managedTune.setOtherNames(updatedMusic.getOtherNames());
 		managedTune.setNotes(updatedMusic.getNotes());
-		em.persist(updatedMusic);
+		em.persist(managedTune);
 	    em.flush();
 		return managedTune;
 	}
