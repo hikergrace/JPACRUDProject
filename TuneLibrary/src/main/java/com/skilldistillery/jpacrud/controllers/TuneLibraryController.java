@@ -46,14 +46,21 @@ public class TuneLibraryController {
 	}
 	
 	@RequestMapping(path = "addTune.do", method = RequestMethod.POST)
-	public ModelAndView addFilm(Tune tune) {
+	public ModelAndView addTune(Tune tune) {
 		ModelAndView mv = new ModelAndView();
-		//TuneDAOJPAImpl t = new TuneDAOJPAImpl();
 		dao.create(tune);
 		mv.addObject("tune", tune);
 		mv.setViewName("/WEB-INF/views/showTune.jsp");
 		return mv;
 	}
+//	@RequestMapping(path = "updateTune.do", method = RequestMethod.POST)
+//	public ModelAndView updateTune(@RequestParam(name="id") Integer tuneId) {
+//		ModelAndView mv = new ModelAndView();
+//		dao.update(tuneId);
+//		mv.addObject("tune", tune);
+//		mv.setViewName("/WEB-INF/views/showTune.jsp");
+//		return mv;
+//	}
 	
 	@RequestMapping(path = "delete.do", method = RequestMethod.POST)
 	public ModelAndView delete(@RequestParam(name="id") Integer tuneId) {

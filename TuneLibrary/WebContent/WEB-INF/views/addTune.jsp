@@ -8,7 +8,6 @@
 </head>
 <body>
 
-//form input names match Tune properties
 <p>Add a tune</p>
 <form action="addTune.do" method="POST">
 	Tune name: <input type="text" name="name">

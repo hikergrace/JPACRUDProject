@@ -21,7 +21,6 @@
 		<form action="delete.do" method="post">
 		<input type="hidden" value="${tune.id}" name="id">
 		<input type="submit" value="Delete">
-		
 		</form>
 </body>
 </html>

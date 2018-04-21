@@ -32,7 +32,13 @@ public class TuneDAOJPAImpl implements TuneDAO{
 
 	@Override
 	public Tune update(Tune music) {
-		return null;
+//		Tune managedTune = em.find(Tune.class, id);
+//		managedTune.setName(music.getName());
+//		managedTune.setKey();
+//		managedTune.getRhythm();
+//		em.persist(music);
+//	    em.flush();
+		return music;
 	}
 
 	@Override

@@ -55,12 +55,12 @@ public class Tune {
 		this.notes = notes;
 	}
 
-
-	// getters&setters
+	
+	//getters & setters
 	public String getName() {
 		return name;
 	}
-	
+
 	public void setName(String name) {
 		this.name = name;
 	}
@@ -125,12 +125,13 @@ public class Tune {
 		return id;
 	}
 
-	// toString
+	
+	//toString
 	@Override
 	public String toString() {
 		return "Tune [id=" + id + ", name=" + name + ", rhythm=" + rhythm + ", key=" + key + ", provenance="
 				+ provenance + ", soundFast=" + soundFast + ", soundSlow=" + soundSlow + ", otherNames=" + otherNames
 				+ ", notes=" + notes + "]";
 	}
-
+	
 }
