@@ -1,5 +1,29 @@
 @charset "UTF-8";
 
+
 p {
-    color: green;
+    font-family: 'Raleway', sans-serif;
+}
+
+h3{
+    font-family: 'Raleway', sans-serif;
+}
+
+h5 {
+    font-family: 'Raleway', sans-serif;
+	align: center;
+}
+
+ul {
+	width:75%;
+    height: auto;
+   	font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+   
+}
+
+.nav {
+    display: inline;
+	padding: 30px 30px 30px 30px;
+	text-decoration:none;
 }
