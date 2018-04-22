@@ -19,6 +19,7 @@ The project currently meets MVP, however I plan to keep working on it and build 
 ## TODOS
 + I want to add in sound files for each tune; one clip of the tune at session speed and another clip of the tune at learning speed.
 + Search capability to search tune by name, style, and/or by key.
++ Link tunes in setlists to tune descriptions
 + Continue with front end design and styling, add images and some color to the jsp.
 + Work on the UX design for a better user experience with navigation.
 + Prevent duplicate tunes from being added.

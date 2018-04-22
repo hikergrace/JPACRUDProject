@@ -27,3 +27,14 @@ ul {
 	padding: 30px 30px 30px 30px;
 	text-decoration:none;
 }
+
+.tuneList {
+	float: left;
+	width: 50%;
+	padding-left: 5em;
+}
+
+.setList {
+	float: right;
+	width: 50%;
+}

@@ -43,13 +43,36 @@
 		<button type="button" class="btn btn-default"><a href="addATune.do">Add a tune</a></button>
 		<br/>
 		<br/>		
-		Click on a tune title to see more information on the tune.</p>
-		<p>
-		<c:forEach items="${tuneList}" var="tune">
-		<a href="getTune.do?id=${tune.id}"  target="_new">${tune.name}</a><br/>
-		</c:forEach>
-		</p> 	
-	
+		
+		
+		<div class="row">
+			<div class="tuneList">
+				<p>Click on a tune title to see more information on the tune.</p>
+				<p>
+				<c:forEach items="${tuneList}" var="tune">
+				<a href="getTune.do?id=${tune.id}"  target="_new">${tune.name}</a><br/>
+				</c:forEach>
+				</p> 
+			</div>
+			
+			<div class="setList">
+			<p>Some of our common sets:</p>
+			<ul>
+				<li>Haste to the Wedding, Pull the Knife and Stick it Again, Buried My Wife and Danced on Her Grave</li>
+				<li>Kittie Lie Over, Jim Ward's, Out on the Ocean</li>
+				<li>Humours of Glendart, Have a Drink With Me (the Harry Potter Set)</li>
+				<li>The Torn Jacket, Come West Along the Road</li>
+				<li>Whisky Before Breakfast, Over the Waterfall, Liberty</li>
+				<li>Fig for a Kiss, Sargent Cahill's, Miller's Maggot</li>
+				<li>Scarce O' Tatties, Dusty Windowsills, Black Rogue</li>
+				<li>Sporting Pitchfork, Ramblin Pitchfork, Behind the Haystack</li>
+				<li>Cold Frosty Morning, Athole Highlanders</li>
+				<li>Angeline the Baker (2x easy speed, 2x breakdown)</li>
+				
+			</ul>
+			</div>
+		</div>
+	</div>
 	<!-- JS files for Bootstrap -->
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
 			integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -62,6 +85,6 @@
 			src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
 			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
 			crossorigin="anonymous"></script>	
-	</div>
+	
 	</body>
 </html>
