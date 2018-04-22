@@ -5,6 +5,8 @@
 ## Description
 This CRUD project is a tune library for local session musicians. Users are able to see a list of tunes, view details of a tune, add a tune, and delete a tune. I built the library is a SQL database with one table and nine fields (currently). I built a JPA project integrated with a Spring MVC project with Gradle nature. There is currently one entity mapped to the SQL table. I created a JUnit test to make sure the entity mappings are correct. I used an external CSS (Bootstrap) file to style the front end.
 
+The project currently meets MVP, however I plan to keep working on it and build it out completely with the TODOs listed below.
+
 ## Deliverables
 + Utilizes a MySQL database to manipulate data.
 + One a single table and entity are required.
@@ -18,7 +20,8 @@ This CRUD project is a tune library for local session musicians. Users are able 
 + I want to add in sound files for each tune; one clip of the tune at session speed and another clip of the tune at learning speed.
 + Search capability to search tune by name, style, and/or by key.
 + Continue with front end design and styling, add images and some color to the jsp.
-+ Work with the UX design for a better user experience with strong navigation.
++ Work on the UX design for a better user experience with navigation.
++ Prevent duplicate tunes from being added.
 
 ## Challenges/Learning Experiences
 + Music has keys (A Major, G minor, etc). However, it doesn't work to name a field in a SQL table "key". Won't make that mistake again.
