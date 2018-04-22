@@ -32,7 +32,7 @@
 		<p><strong>Add a tune</strong></p>
 		<form action="addTune.do" method="POST">
 			Tune name: <input type="text" name="name"><br/>
-			Rhythm (jig, reel, etc): <input type="text" name="rhythm"><br/>
+			Style (jig, reel, etc): <input type="text" name="rhythm"><br/>
 			Key: <input type="text" name="key"><br/>
 			Origin: <input type="text" name="provenance"><br/>
 			<!-- Sound file (session speed): <input type="text" name="soundFast"><br/>

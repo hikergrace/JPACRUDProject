@@ -31,7 +31,7 @@
 		<p>Update a tune:</p>
 		<form action="updateTune.do" method="POST">
 			Tune name: <input type="text" name="name">
-			Rhythm (jig, reel, etc): <input type="text" name="rhythm">
+			Style (jig, reel, etc): <input type="text" name="rhythm">
 			Key: <input type="text" name="key">
 			Origin: <input type="text" name="provenance">
 			<!-- Sound file (session speed): <input type="text" name="soundFast">
