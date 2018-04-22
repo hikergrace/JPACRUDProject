@@ -38,7 +38,7 @@
 		<p>Traditional music sessions (seisiúns) go way back in music history with humble beginnings around kitchen tables, on front porches, and in pubs. 
 		They are informal get-togethers of musicians who sit down and play for the love of the music. Traditional sessions are not performances and 
 		nothing is rehearsed. We just share tunes, songs, and stories for the fun of it. We love the stories behind the tunes and mighty craic!</p>
-		<p>Below are the current tunes in the library. The library is updated regularly, but if you don't see your favorite tune, you are welcome 
+		<p>Below are the current tunes in the library. The library is a work in progress, but if you don't see your favorite tune, you are welcome 
 		to add it!<br/>
 		<button type="button" class="btn btn-default"><a href="addATune.do">Add a tune</a></button>
 		<br/>

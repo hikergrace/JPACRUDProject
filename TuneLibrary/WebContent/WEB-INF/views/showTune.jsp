@@ -32,12 +32,14 @@
 	
 	<h5>${tune.name}</h5>
 	<ul>
-		<li>${tune.rhythm}</li>
-		<li>${tune.key}</li>
-		<li>${tune.provenance}</li>
-		<li><a href="getTune.do=${tune.soundFast}">Play sound file</a></li>
-	
+		<li>Style: ${tune.rhythm}</li>
+		<li>Key: ${tune.key}</li>
+		<li>Origin: ${tune.provenance}</li>
+		<!-- <li><a href="getTune.do=${tune.soundFast}">Play sound file</a></li> -->
+		
 	</ul> 
+	
+	<!-- <button type="button" class="btn btn-default"><a href="index.jsp">Home</a></button> -->
 		
 	<form action="delete.do" method="post">
 		<input type="hidden" value="${tune.id}" name="id">
@@ -52,8 +54,8 @@
 		Rhythm: <input type="text" name="rhythm"><br/>
 		Key: <input type="text" name="key"><br/>
 		Where from: <input type="text" name="provenance"><br/>
-		Sound file: <input type="text" name="soundFast"><br/>
-		Sound file: <input type="text" name="soundSlow"><br/>
+		<!-- Sound file: <input type="text" name="soundFast"><br/>
+		Sound file: <input type="text" name="soundSlow"><br/> -->
 		AKA: <input type="text" name="otherNames"><br/>
 		Notes: <input type="text" name="notes"><br/>
 	<input type="submit" value="Submit">

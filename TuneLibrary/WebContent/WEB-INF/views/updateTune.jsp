@@ -33,9 +33,9 @@
 			Tune name: <input type="text" name="name">
 			Rhythm (jig, reel, etc): <input type="text" name="rhythm">
 			Key: <input type="text" name="key">
-			Where from: <input type="text" name="provenance">
-			Sound file (session speed): <input type="text" name="soundFast">
-			Sound file (learning speed): <input type="text" name="soundSlow">
+			Origin: <input type="text" name="provenance">
+			<!-- Sound file (session speed): <input type="text" name="soundFast">
+			Sound file (learning speed): <input type="text" name="soundSlow"> -->
 			Other names: <input type="text" name="otherNames">
 			Notes: <input type="text" name="notes">
 			<input type="submit" value="Submit">
