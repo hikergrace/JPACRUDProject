@@ -43,7 +43,7 @@
 		<button type="button" class="btn btn-default"><a href="addATune.do">Add a tune</a></button>
 		<br/>
 		<br/>		
-		
+		<img src="images/aubreybuddha.jpg" alt="cat">
 		
 		<div class="row">
 			<div class="tuneList">

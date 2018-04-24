@@ -35,7 +35,7 @@
 		<li>Style: ${tune.rhythm}</li>
 		<li>Key: ${tune.key}</li>
 		<li>Origin: ${tune.provenance}</li>
-		<!-- <li><a href="getTune.do=${tune.soundFast}">Play sound file</a></li> -->
+		<li><a href="${tune.soundFast}">Play sound file</a></li> 
 		
 	</ul> 
 	
