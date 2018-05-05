@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -20,20 +20,21 @@
 	
 	<div class="container-fluid">
 	
-		<div class="row">
+		<div class="row full">
 			<div class="col-sm-1"></div>
 			<div class="col-sm-10">
-			<hr/><br/>
-				<h4 align="center">Welcome to the Denver Pub Sessions Tune Library</h4>
-			<hr/><br/>
+			<br/><br/>
+				<h4 align="center" class="linkNoDec"><a href="tunes.do">Welcome to the Denver Pub Sessions Tune Library</a></h4>
+			<br/><br/>
 			</div>
 			<div class="col-sm-1"></div>
 			</div>
 		<p><strong>Add a tune</strong></p>
+		<p>Tune name, style, and key are required fields. </p>
 		<form action="addTune.do" method="POST">
-			Tune name: <input type="text" name="name"><br/>
-			Style (jig, reel, etc): <input type="text" name="rhythm"><br/>
-			Key: <input type="text" name="key"><br/>
+			Tune name: <input type="text" name="name" required><br/>
+			Style (jig, reel, etc): <input type="text" name="rhythm" required><br/>
+			Key: <input type="text" name="key" required><br/>
 			Origin: <input type="text" name="provenance"><br/>
 			<!-- Sound file (session speed): <input type="text" name="soundFast"><br/>
 			Sound file (learning speed): <input type="text" name="soundSlow"><br/>-->

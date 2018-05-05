@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -20,44 +20,54 @@
 	
 	<div class="container-fluid">
 	
-		<div class="row">
+		<div class="row full">
 			<div class="col-sm-1"></div>
 			<div class="col-sm-10">
-				<hr/><br/>
-				<h4 align="center">Welcome to the Denver Pub Sessions Tune Library</h4>
-				<hr/><br/>
+				<br/><br/>
+				<h4 align="center" class="linkNoDec"><a href="tunes.do">Welcome to the Denver Pub Sessions Tune Library</a></h4>
+				<br/><br/>
 			</div>
 			<div class="col-sm-1"></div>
-			</div>
-	
+		</div>
+	<br><br><br>
 	<h5>${tune.name}</h5>
 	<ul>
 		<li>Style: ${tune.rhythm}</li>
 		<li>Key: ${tune.key}</li>
 		<li>Origin: ${tune.provenance}</li>
-		<li><a href="${tune.soundFast}">Play sound file</a></li> 
+		
+		<%-- <c:choose>
+			<c:when test="${empty tune.soundFast}">
+				<li>No sound clips on file for this tune</li>
+			</c:when>
+			<c:otherwise>
+				<li>Play sound file: <a href="${tune.soundFast}">${tune.soundFast}</a></li>
+			</c:otherwise>
+		</c:choose>	 --%>
+		
 		
 	</ul> 
 	
 	<!-- <button type="button" class="btn btn-default"><a href="index.jsp">Home</a></button> -->
 		
-	<form action="delete.do" method="post">
+	<!-- <form action="delete.do" method="post">
 		<input type="hidden" value="${tune.id}" name="id">
 		<input type="submit" value="Delete">
-	</form>
-	<br/>	
+	</form> -->
+	
+	
 	<br/>
 	<p><strong>Update this tune:</strong></p>
 	<form action="updateTune.do" method="POST">
 		<input type="hidden" value="${tune.id}" name="id">
-		Name: <input type="text" name="name"><br/>
-		Rhythm: <input type="text" name="rhythm"><br/>
-		Key: <input type="text" name="key"><br/>
-		Where from: <input type="text" name="provenance"><br/>
+		Name: <input type="text" name="name" value="${tune.name}"><br/>
+		Rhythm: <input type="text" name="rhythm" value="${tune.rhythm}"><br/>
+		Key: <input type="text" name="key" value="${tune.key}"><br/>
+		Origin: <input type="text" name="provenance" value="${tune.provenance}"><br/>
+		
 		<!-- Sound file: <input type="text" name="soundFast"><br/>
 		Sound file: <input type="text" name="soundSlow"><br/> -->
-		AKA: <input type="text" name="otherNames"><br/>
-		Notes: <input type="text" name="notes"><br/>
+	
 	<input type="submit" value="Submit">
 	</form>
 	

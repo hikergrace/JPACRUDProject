@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -18,22 +18,22 @@
 	<body>
 	
 	<div class="container-fluid">
-		<div class="row">
+		<div class="row full">
 			<div class="col-sm-1"></div>
 			<div class="col-sm-10">
-			<hr/><br/>
+			<br/><br/>
 				<h4 align="center">Welcome to the Denver Pub Sessions Tune Library</h4>
-			<hr/><br/>
+			<br/><br/>
 			</div>
 			<div class="col-sm-1"></div>
 		</div>
 		
 		<p>Update a tune:</p>
 		<form action="updateTune.do" method="POST">
-			Tune name: <input type="text" name="name">
-			Style (jig, reel, etc): <input type="text" name="rhythm">
-			Key: <input type="text" name="key">
-			Origin: <input type="text" name="provenance">
+			Tune name: <input type="text" name="name" value="${tune.name}">
+			Style (jig, reel, etc): <input type="text" name="rhythm" value="${tune.rhythm}">
+			Key: <input type="text" name="key" value="${tune.key}">
+			Origin: <input type="text" name="provenance" value="${tune.provenance}">
 			<!-- Sound file (session speed): <input type="text" name="soundFast">
 			Sound file (learning speed): <input type="text" name="soundSlow"> -->
 			Other names: <input type="text" name="otherNames">

@@ -24,12 +24,12 @@
 	
 	<div class="container-fluid">
 	
-		<div class="row">
+		<div class="row full">
 			<div class="col-sm-1"></div>
 			<div class="col-sm-10">
-			<hr/><br/>
+			<br/><br/>
 				<h4 align="center">Welcome to the Denver Pub Sessions Tune Library</h4>
-			<hr/><br/>
+			<br/><br/>
 			</div>
 			<div class="col-sm-1"></div>
 			</div>
@@ -43,7 +43,7 @@
 		<button type="button" class="btn btn-default"><a href="addATune.do">Add a tune</a></button>
 		<br/>
 		<br/>		
-		<img src="images/aubreybuddha.jpg" alt="cat">
+		 <!-- <img src="images/aubreybuddha.jpg" alt="cat">  -->
 		
 		<div class="row">
 			<div class="tuneList">
