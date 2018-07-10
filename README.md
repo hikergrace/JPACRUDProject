@@ -1,4 +1,4 @@
-# JPACRUDProject
+# Denver Pub Sessions Tune Library
 
 ## Week 8 Homework Project for Skill Distillery - JPA CRUD
 
